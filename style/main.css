@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 7%;
+    padding: 5px;
+}
+.sidebar-container{
+    margin-top: 4vh;
+}
+.sidebar-container .toggle{
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sidebar-container .sidebar-lists{
+    width: 5%;
+}
+.sidebar-lists ul{
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+}
+.sidebar-lists ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3px 0;
+    font-size: 10px;
+    cursor: pointer;
+}
+.sidebar-lists ul li i{
+    font-size: 16px;
+    margin: 3px 0;
+}
+.sidebar-lists ul li svg{
+    width: 25px !important;
+    height: 30px !important;
+    margin: 0 auto;
+}
+/*Offcanvas*/
+.offcanvas .hidden {
+    display: none;
+}
+/*main content*/
+header{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 90%;
+    z-index: 10;
+}
+.main-content{
+    margin-left: 8%;    
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar button{
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+}
+.navbar img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+.navbar span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.search{
+    flex-grow: 0.5;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+}
+.search-box input{
+    padding: 5px;
+    height: 25px;
+    margin: 0 2px;
+    width: 100%;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+.icons .fa{
+    margin: 6px 7px;
+    font-size: 22px;
+}
+.icons .noti{
+    position: relative;
+}
+.icons .noti-num{
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    width: 18px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f00;
+    padding: 5px;
+    color: #fff;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 600;
+}
+.icons .account{
+    background-color: hsl(205.9, 80%, 43.1%);
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons span{
+    font-size: 14px;
+}
+
+.can-search{
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0;
+}
+.can-search ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+
+}
+.can-search ul li{
+    padding: 7px;
+    background-color: #e2e2e2;
+    margin: 0 7px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+/*videos*/
+.videos{
+    display: grid;
+    margin-top: 25vh;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 25px;
+    background-color: rgb(247, 247, 247);
+}
+.videos .card{
+    padding: 2px;
+    cursor: pointer;
+}
+.videos .card .img{
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.videos .card img{
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+}
+.videos .card-details{
+    display: flex;
+}
+.card-details .channel-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.card .img .time{
+    padding: 1px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 5px;
+    right: 11px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.card-details .title{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+.card-details .channel{
+    margin: 8px 0;
+    color: rgb(92, 92, 92);
+    font-size: 12px;
+}
+.card-details .views{
+    color: rgb(92, 92, 92);
+    font-size: 11px;
+}
